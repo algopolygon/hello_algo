@@ -6,13 +6,13 @@ import requests
 import pandas as pd
 from datetime import datetime, timedelta
 import time
-from config.trading_config import MOEX_API_BASE
+from config.venue_config import MOEX_DATA_API
 
 
 class MOEXClient:
     """Клиент для получения данных с MOEX"""
 
-    def __init__(self, base_url=MOEX_API_BASE):
+    def __init__(self, base_url=MOEX_DATA_API):
         self.base_url = base_url
 
     def fetch_candles(self, ticker, from_date, till_date, interval=10, start=0):

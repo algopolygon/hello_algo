@@ -4,13 +4,13 @@
 
 import requests
 from datetime import datetime
-from config.trading_config import ARENA_CONFIG
+from config.venue_config import ARENAGO_CONFIG
 
 
 class OrderManager:
     """Менеджер для отправки ордеров"""
 
-    def __init__(self, config=ARENA_CONFIG):
+    def __init__(self, config=ARENAGO_CONFIG):
         self.config = config
         self.url = config['url']
         self.token = config['token']

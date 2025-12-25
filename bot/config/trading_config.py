@@ -3,19 +3,11 @@
 """
 
 TRADING_CONFIG = {
-    'ticker': 'GAZP',
-    'quantity': 700,
-    'trading_start_time': '07:05:00',
-    'trading_end_time': '23:40:00',
-    'history_days': 3,
-    'fetch_interval': 60,
-    'timeframe': 10,
+    'ticker': 'GAZP',                 # Код инструмента
+    'quantity': 700,                  # Кол-во лотов
+    'trading_start_time': '07:05:00', # Время начала работы робота
+    'trading_end_time': '23:40:00',   # Время окончания работы робота
+    'history_days': 3,                # Подгрузка последних исторических данных при старте
+    'fetch_interval': 60,             # Получение апдейта котировок каждые 60 секунд
+    'timeframe': 10,                  # Работаем на 10 минутных свечах
 }
-
-ARENA_CONFIG = {
-    'url': 'https://arenago.ru',
-    'token': '054078..........ee8b51',
-    'bot': 'baseline_bot'
-}
-
-MOEX_API_BASE = 'https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities'
