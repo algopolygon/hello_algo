@@ -134,6 +134,8 @@ python main.py
 
 ## 🤝 Контакты
 
+telegram: [@arenago_ru](https://t.me/arenago_ru)
+
 Создано для платформы arenago.ru 🚀
 
 ## 📦 Зависимости
